@@ -55,7 +55,7 @@ c2_generator = ToyDataGenerator()
 c1_generator.add_normal(1, 1)
 c2_generator.add_normal(2, 1)
 ```
-![Different mean, same stdev, histogram](/toy_data/img/diff-mean-same-std-hist.png)
+![Different mean, same stdev, histogram](/toy_data/img/diff-mean-same-std-hist.png | width = 100px)
 ![Different mean, same stdev, ROC](/toy_data/img/diff-mean-same-std-roc.png)
 Here, all methods work reasonably well.  The worst method is Bucketize/OHE.  In this case, everything within a bucket is given exactly the same score, and some buckets have many more samples than others.  This coarser treatment of the input space is reflected in the ROC curve above, which large gaps between meaningful points along the curve.
 
